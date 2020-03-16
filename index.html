@@ -1,0 +1,26 @@
+<html>
+    <head>
+    <title>todo app</title>
+    <link rel="stylesheet" type="text/css" href="app.css">
+
+    </head>
+    <body>
+        <main id="app">
+            <h2>{{ display }}</h2>
+            <form @submit.prevent="addTodo">
+                <label for="userName"><b>UserName</b></label>
+                <input type="text" name="username" id="userName"><br>
+                  <label for="passWord"><b>Password</b></label>
+                <input type="password" name="password" id="passWord"><br>
+                 <button type="submit" name="button">SignUp</button><br>
+                 <label for="addTask"><b>AddTask</b></label>
+                 <input v-model="message" placeholder="edit me">
+                <p>{{ message }}</p>
+                <button type="submit" name="button">Submit</button><br>
+                </form>
+
+        </main>
+            <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+            <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
